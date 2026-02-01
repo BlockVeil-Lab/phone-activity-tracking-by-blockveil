@@ -33,7 +33,7 @@ function doPost (e) {
       .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
       .setMimeType(ContentService.MimeType.JSON)
   }
-
   finally {
-    lock.releaseLock()
-  }
+  lock.releaseLock()
+}
+}
